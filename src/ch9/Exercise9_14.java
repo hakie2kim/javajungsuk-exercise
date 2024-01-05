@@ -22,7 +22,7 @@ public class Exercise9_14 {
             }
 
             for (String phoneNum : phoneNumArr) {
-                // "-" 삭제한 후 input 앞뒤로 아무 숫자
+                // "-" 삭제한 후 input 앞뒤로 아무 숫자나 와도 되는 패턴이랑 매치하는지 확인
                 Matcher m = Pattern.compile(".*" + input + ".*").matcher(phoneNum.replace("-", ""));
                 if (m.matches())
                     list.add(phoneNum);
